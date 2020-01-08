@@ -1,6 +1,4 @@
 "use strict";
-exports.__esModule = true;
-var d3 = require("d3");
 // import { formatType, handleErrors } from '../common/utils'
 // import {
 //   Link,
