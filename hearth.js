@@ -37,9 +37,11 @@ const visObject = {
   **/
 	updateAsync: function(data, element, config, queryResponse, details, doneRendering){
     // set the dimensions and margins of the graph
+	console.log(queryResponse,data)  // added in to log console of data, via Chrome developer tool
     var margin = {top: 20, right: 20, bottom: 30, left: 40},
         width = 960 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
+	
 
     // set the ranges
     var x = d3.scaleBand()
