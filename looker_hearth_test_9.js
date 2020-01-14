@@ -64,9 +64,9 @@ const visObject = {
     // format the data
     data.forEach(function(d) {
       formattedData.push({
-      	count: 9,
-        friendly_class: 9,
-        opponent_class: 9
+      	count: 50,
+        friendly_class: 50,
+        opponent_class: 50
       });
     });
 
