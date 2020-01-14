@@ -30,7 +30,7 @@ const visObject = {
 	create: function(element, config){
 		element.innerHTML = "<h1>Ready to render!</h1>";
 	},
-
+data = ["x" , "y", "zzzzzzzzz1"];
  /**
   * UpdateAsync is the function that gets called (potentially) multiple times. It receives
   * the data and should update the visualization with the new data.
