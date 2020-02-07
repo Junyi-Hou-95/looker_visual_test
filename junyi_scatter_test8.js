@@ -77,8 +77,8 @@ updateAsync: function(data, element, config, queryResponse, details, done){
     .data(data)
     .enter()
     .append("circle")
-      .attr("cx", function (d) { return x(d.GrLivArea); } )
-      .attr("cy", function (d) { return y(d.SalePrice); } )
+      .attr("cx", function (d) { return x(d.value); } )
+      .attr("cy", function (d) { return y(d.value); } )
       .attr("r", 1.5)
       .style("fill", "#69b3a2")
 
