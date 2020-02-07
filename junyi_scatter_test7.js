@@ -34,7 +34,9 @@ updateAsync: function(data, element, config, queryResponse, details, done){
     // Clear any errors from previous updates
     this.clearErrors();
 
-
+    console.log(typeof(data))
+    console.log(data)
+   
     console.log("is this here?")
      
     for (const d of data){
