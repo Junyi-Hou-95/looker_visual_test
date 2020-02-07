@@ -36,6 +36,10 @@ updateAsync: function(data, element, config, queryResponse, details, done){
 
 
     console.log("is this here?")
+     
+    for (const d of data){
+    console.log(d)
+    }
 
 
     done()
