@@ -39,4 +39,5 @@ updateAsync: function(data, element, config, queryResponse, details, done){
 
 
     done()
+}
 };
