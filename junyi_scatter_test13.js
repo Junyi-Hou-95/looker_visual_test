@@ -77,7 +77,7 @@ updateAsync: function(data, element, config, queryResponse, details, done){
     .data(data)
     .enter()
     .append("circle")
-      .attr("cx", function (d) { console.log('Xcxx------------------'); console.log(d); console.log(d["user"]) ; return x(d.value); } )
+      .attr("cx", function (d) { console.log('Xcxx------------------'); console.log(d); console.log(d["user"]); console.log(d["user"]["count"]) ; ; return x(d["count"]); } )
       .attr("cy", function (d) {  console.log('Ycyy++++++++++++'); console.log(d) ; console.log(d["user"]) ;  return y(d.value); } )
       .attr("r", 1.5)
       .style("fill", "#69b3a2")
