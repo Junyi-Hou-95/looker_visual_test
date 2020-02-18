@@ -32,7 +32,12 @@ create: function(element, config) {
 updateAsync: function(data, element, config, queryResponse, details, done){
     // Clear any errors from previous updates
     this.clearErrors();
-
+    element.innerHTML = `
+    <!DOCTYPE html>
+  <meta charset="utf-8">
+  <!-- Create a div where the graph will take place -->
+  <div id="my_dataviz"></div>`
+  
 //     console.log(typeof(data))
 //     console.log(data)
 //     console.log(data[0])
