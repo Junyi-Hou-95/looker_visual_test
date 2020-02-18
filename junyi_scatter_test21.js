@@ -103,11 +103,6 @@ updateAsync: function(data, element, config, queryResponse, details, done){
     const max_y = Math.max.apply(Math, y_arr) * 1.1
     const min_y = Math.min.apply(Math, y_arr) * 0.9
   
-  
-//     get the last 2 column names
-    const y_col = Object.keys(data[0])[length_of_values-1]
-    // const y_col = 'number_proposed'
-    const x_col = Object.keys(data[0])[length_of_values-2]
 
     var margin = {top: 10, right: 30, bottom: 30, left: 60},
     width = 460 - margin.left - margin.right,
