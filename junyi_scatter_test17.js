@@ -79,9 +79,9 @@ updateAsync: function(data, element, config, queryResponse, details, done){
     .data(data)
     .enter()
     .append("circle")
-      .attr("cx", function (d) { console.log(d); for (const property in parsedData[1]) {
+      .attr("cx", function (d) { console.log(d); for (const property in d[1]) {
 		console.log(property);
-		console.log(parsedData[1][property]);
+		console.log(d[1][property]);
 	}; } )
       .attr("cy", function (d) {  console.log('Ycyy++++++++++++'); } )
       .attr("r", 1.5)
