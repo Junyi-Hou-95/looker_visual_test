@@ -43,6 +43,11 @@ updateAsync: function(data, element, config, queryResponse, details, done){
     for (const d of data){
     console.log(d)
     };
+  
+//     get the last 2 column names
+    const y_col = Object.keys(data[0])[length_of_values-1]
+    // const y_col = 'number_proposed'
+    const x_col = Object.keys(data[0])[length_of_values-2]
 
     var margin = {top: 10, right: 30, bottom: 30, left: 60},
     width = 460 - margin.left - margin.right,
@@ -78,8 +83,8 @@ updateAsync: function(data, element, config, queryResponse, details, done){
     .data(data)
     .enter()
     .append("circle")
-      .attr("cx", function (d) { return x(d['funded']['value']); } )
-      .attr("cy", function (d) { return y(d['number_proposed']['value']); } )
+      .attr("cx", function (d) { return x(d[x_col]['value']); } )
+      .attr("cy", function (d) { return y(d[y_col]['value']); } )
       .attr("r", 1.5)
       .style("fill", "#69b3a2")
 
